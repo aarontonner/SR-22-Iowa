@@ -51,7 +51,7 @@ eleventyNavigation:
       <picture class="blog-mainImage">
         <img
           src="{{ location.data.image }}"
-          alt="{{ location.data.imageAlt }}"
+          alt=""
           width="795"
           height="400"
           decoding="async"
@@ -76,8 +76,7 @@ eleventyNavigation:
           {#
           <span class="blog-date">{{ location.date | locationDate }}</span> #}
         </div>
-        <h2 class="blog-h1">{{ location.data.title }}</h2>
-        <p class="blog-desc">{{ location.data.description }}</p>
+        <h2 class="blog-h1">{{ location.data.location }}</h2>
         <a href="{{ location.url }}" class="blog-link">Continue Reading</a>
       </div>
     </article>
